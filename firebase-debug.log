@@ -1,0 +1,599 @@
+[debug] [2026-09-21T05:15:05.292Z] ----------------------------------------------------------------------
+[debug] [2026-09-21T05:15:05.298Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:list --json
+[debug] [2026-09-21T05:15:05.299Z] CLI Version:   15.30.2
+[debug] [2026-09-21T05:15:05.299Z] Platform:      win32
+[debug] [2026-09-21T05:15:05.299Z] Node Version:  v24.21.0
+[debug] [2026-09-21T05:15:05.299Z] Detected Agent: unknown
+[debug] [2026-09-21T05:15:05.299Z] Time:          Mon Sep 21 2026 13:15:05 GMT+0800 (Philippine Standard Time)
+[debug] [2026-09-21T05:15:05.299Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-09-21T05:15:05.318Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-09-21T05:15:05.318Z] > authorizing via signed-in user (e.toyongan.554232@umindanao.edu.ph)
+[debug] [2026-09-21T05:15:05.351Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:15:05.351Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:15:05.354Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2026-09-21T05:15:06.354Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2026-09-21T05:15:06.354Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] ┌────────────────────────────────┬───────────────────────────────┬────────────────┬──────────────────────┐
+│ Project Display Name           │ Project ID                    │ Project Number │ Resource Location ID │
+├────────────────────────────────┼───────────────────────────────┼────────────────┼──────────────────────┤
+│ employee attendance db         │ employee-attendance-db-1089a  │ 229350524307   │ [Not specified]      │
+├────────────────────────────────┼───────────────────────────────┼────────────────┼──────────────────────┤
+│ Emplyee attendance monitoring  │ emplyee-attendance-monitoring │ 333335122205   │ [Not specified]      │
+└────────────────────────────────┴───────────────────────────────┴────────────────┴──────────────────────┘
+[info] 
+[info] 2 project(s) total.
+[debug] [2026-09-21T05:15:16.413Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:299:49)
+    at listOnTimeout (node:internal/timers:685:17)
+    at process.processTimers (node:internal/timers:618:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-09-21T05:15:51.745Z] ----------------------------------------------------------------------
+[debug] [2026-09-21T05:15:51.750Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js apps:list android --json --project=employee-attendance-db-1089a
+[debug] [2026-09-21T05:15:51.751Z] CLI Version:   15.30.2
+[debug] [2026-09-21T05:15:51.751Z] Platform:      win32
+[debug] [2026-09-21T05:15:51.751Z] Node Version:  v24.21.0
+[debug] [2026-09-21T05:15:51.752Z] Detected Agent: unknown
+[debug] [2026-09-21T05:15:51.752Z] Time:          Mon Sep 21 2026 13:15:51 GMT+0800 (Philippine Standard Time)
+[debug] [2026-09-21T05:15:51.752Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-09-21T05:15:51.769Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-09-21T05:15:51.769Z] > authorizing via signed-in user (e.toyongan.554232@umindanao.edu.ph)
+[debug] [2026-09-21T05:15:51.797Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:15:51.797Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:15:51.800Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/androidApps pageSize=100
+[debug] [2026-09-21T05:15:59.509Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/androidApps 200
+[debug] [2026-09-21T05:15:59.510Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/androidApps {}
+[info] No apps found.
+[debug] [2026-09-21T05:16:09.552Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:299:49)
+    at listOnTimeout (node:internal/timers:685:17)
+    at process.processTimers (node:internal/timers:618:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-09-21T05:16:11.629Z] ----------------------------------------------------------------------
+[debug] [2026-09-21T05:16:11.634Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js apps:create android employee_attendance_system (android) --package-name=com.example.employee_attendance_system --json --project=employee-attendance-db-1089a
+[debug] [2026-09-21T05:16:11.635Z] CLI Version:   15.30.2
+[debug] [2026-09-21T05:16:11.635Z] Platform:      win32
+[debug] [2026-09-21T05:16:11.636Z] Node Version:  v24.21.0
+[debug] [2026-09-21T05:16:11.636Z] Detected Agent: unknown
+[debug] [2026-09-21T05:16:11.636Z] Time:          Mon Sep 21 2026 13:16:11 GMT+0800 (Philippine Standard Time)
+[debug] [2026-09-21T05:16:11.637Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-09-21T05:16:11.654Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-09-21T05:16:11.654Z] > authorizing via signed-in user (e.toyongan.554232@umindanao.edu.ph)
+[info] Create your ANDROID app in project employee-attendance-db-1089a:
+[debug] [2026-09-21T05:16:11.684Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:16:11.684Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:16:11.687Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/androidApps [none]
+[debug] [2026-09-21T05:16:11.687Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/androidApps {"displayName":"employee_attendance_system (android)","packageName":"com.example.employee_attendance_system"}
+[debug] [2026-09-21T05:16:13.828Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/androidApps 200
+[debug] [2026-09-21T05:16:13.828Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/androidApps {"name":"operations/workflows/OGY5OTM1MWItZmQzMi00MTJjLTllMzktYTNjZWZhNmQyMDVl"}
+[debug] [2026-09-21T05:16:13.830Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:16:13.830Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:16:13.830Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY5OTM1MWItZmQzMi00MTJjLTllMzktYTNjZWZhNmQyMDVl [none]
+[debug] [2026-09-21T05:16:14.274Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY5OTM1MWItZmQzMi00MTJjLTllMzktYTNjZWZhNmQyMDVl 200
+[debug] [2026-09-21T05:16:14.275Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY5OTM1MWItZmQzMi00MTJjLTllMzktYTNjZWZhNmQyMDVl {"name":"operations/workflows/OGY5OTM1MWItZmQzMi00MTJjLTllMzktYTNjZWZhNmQyMDVl"}
+[debug] [2026-09-21T05:16:14.786Z] [Create Android app Poller] Retrying task index 0
+[debug] [2026-09-21T05:16:14.786Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:16:14.787Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:16:14.787Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY5OTM1MWItZmQzMi00MTJjLTllMzktYTNjZWZhNmQyMDVl [none]
+[debug] [2026-09-21T05:16:15.382Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY5OTM1MWItZmQzMi00MTJjLTllMzktYTNjZWZhNmQyMDVl 200
+[debug] [2026-09-21T05:16:15.382Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY5OTM1MWItZmQzMi00MTJjLTllMzktYTNjZWZhNmQyMDVl {"name":"operations/workflows/OGY5OTM1MWItZmQzMi00MTJjLTllMzktYTNjZWZhNmQyMDVl"}
+[debug] [2026-09-21T05:16:16.384Z] [Create Android app Poller] Retrying task index 0
+[debug] [2026-09-21T05:16:16.385Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:16:16.385Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:16:16.386Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY5OTM1MWItZmQzMi00MTJjLTllMzktYTNjZWZhNmQyMDVl [none]
+[debug] [2026-09-21T05:16:17.003Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY5OTM1MWItZmQzMi00MTJjLTllMzktYTNjZWZhNmQyMDVl 200
+[debug] [2026-09-21T05:16:17.003Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY5OTM1MWItZmQzMi00MTJjLTllMzktYTNjZWZhNmQyMDVl {"name":"operations/workflows/OGY5OTM1MWItZmQzMi00MTJjLTllMzktYTNjZWZhNmQyMDVl"}
+[debug] [2026-09-21T05:16:19.004Z] [Create Android app Poller] Retrying task index 0
+[debug] [2026-09-21T05:16:19.005Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:16:19.005Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:16:19.005Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY5OTM1MWItZmQzMi00MTJjLTllMzktYTNjZWZhNmQyMDVl [none]
+[debug] [2026-09-21T05:16:19.387Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY5OTM1MWItZmQzMi00MTJjLTllMzktYTNjZWZhNmQyMDVl 200
+[debug] [2026-09-21T05:16:19.387Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OGY5OTM1MWItZmQzMi00MTJjLTllMzktYTNjZWZhNmQyMDVl {"name":"operations/workflows/OGY5OTM1MWItZmQzMi00MTJjLTllMzktYTNjZWZhNmQyMDVl","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.AndroidApp","name":"projects/employee-attendance-db-1089a/androidApps/1:229350524307:android:d4ccf7384b916c517a9466","appId":"1:229350524307:android:d4ccf7384b916c517a9466","displayName":"employee_attendance_system (android)","projectId":"employee-attendance-db-1089a","packageName":"com.example.employee_attendance_system","apiKeyId":"bde45370-0199-435f-84bc-80f2991f41cf","state":"ACTIVE","expireTime":"1970-01-01T00:00:00Z","framework":{},"etag":"1_ea86fcc3-6400-4e4c-898c-12de4581985b"}}
+[info] 
+[info] 🎉🎉🎉 Your Firebase ANDROID App is ready! 🎉🎉🎉
+[info] 
+[info] App information:
+[info]   - App ID: 1:229350524307:android:d4ccf7384b916c517a9466
+[info]   - Display name: employee_attendance_system (android)
+[info]   - Package name: com.example.employee_attendance_system
+[info] 
+[info] You can run this command to print out your new app's Google Services config:
+[info]   firebase apps:sdkconfig ANDROID 1:229350524307:android:d4ccf7384b916c517a9466
+[debug] [2026-09-21T05:16:29.415Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:299:49)
+    at listOnTimeout (node:internal/timers:685:17)
+    at process.processTimers (node:internal/timers:618:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-09-21T05:16:31.492Z] ----------------------------------------------------------------------
+[debug] [2026-09-21T05:16:31.497Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js apps:sdkconfig android 1:229350524307:android:d4ccf7384b916c517a9466 --json
+[debug] [2026-09-21T05:16:31.497Z] CLI Version:   15.30.2
+[debug] [2026-09-21T05:16:31.497Z] Platform:      win32
+[debug] [2026-09-21T05:16:31.497Z] Node Version:  v24.21.0
+[debug] [2026-09-21T05:16:31.498Z] Detected Agent: unknown
+[debug] [2026-09-21T05:16:31.498Z] Time:          Mon Sep 21 2026 13:16:31 GMT+0800 (Philippine Standard Time)
+[debug] [2026-09-21T05:16:31.498Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-09-21T05:16:31.513Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-09-21T05:16:31.514Z] > authorizing via signed-in user (e.toyongan.554232@umindanao.edu.ph)
+[debug] [2026-09-21T05:16:31.542Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:16:31.543Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:16:31.545Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/androidApps/1:229350524307:android:d4ccf7384b916c517a9466/config [none]
+[debug] [2026-09-21T05:16:33.808Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/androidApps/1:229350524307:android:d4ccf7384b916c517a9466/config 200
+[debug] [2026-09-21T05:16:33.808Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/androidApps/1:229350524307:android:d4ccf7384b916c517a9466/config {"configFilename":"google-services.json","configFileContents":"ewogICJwcm9qZWN0X2luZm8iOiB7CiAgICAicHJvamVjdF9udW1iZXIiOiAiMjI5MzUwNTI0MzA3IiwKICAgICJwcm9qZWN0X2lkIjogImVtcGxveWVlLWF0dGVuZGFuY2UtZGItMTA4OWEiLAogICAgInN0b3JhZ2VfYnVja2V0IjogImVtcGxveWVlLWF0dGVuZGFuY2UtZGItMTA4OWEuZmlyZWJhc2VzdG9yYWdlLmFwcCIKICB9LAogICJjbGllbnQiOiBbCiAgICB7CiAgICAgICJjbGllbnRfaW5mbyI6IHsKICAgICAgICAibW9iaWxlc2RrX2FwcF9pZCI6ICIxOjIyOTM1MDUyNDMwNzphbmRyb2lkOmQ0Y2NmNzM4NGI5MTZjNTE3YTk0NjYiLAogICAgICAgICJhbmRyb2lkX2NsaWVudF9pbmZvIjogewogICAgICAgICAgInBhY2thZ2VfbmFtZSI6ICJjb20uZXhhbXBsZS5lbXBsb3llZV9hdHRlbmRhbmNlX3N5c3RlbSIKICAgICAgICB9CiAgICAgIH0sCiAgICAgICJvYXV0aF9jbGllbnQiOiBbXSwKICAgICAgImFwaV9rZXkiOiBbCiAgICAgICAgewogICAgICAgICAgImN1cnJlbnRfa2V5IjogIkFJemFTeUMtUlVld0EyTjhUZ2tpWGVVdUhxcUFXbUxONW5FbUZ3VSIKICAgICAgICB9CiAgICAgIF0sCiAgICAgICJzZXJ2aWNlcyI6IHsKICAgICAgICAiYXBwaW52aXRlX3NlcnZpY2UiOiB7CiAgICAgICAgICAib3RoZXJfcGxhdGZvcm1fb2F1dGhfY2xpZW50IjogW10KICAgICAgICB9CiAgICAgIH0KICAgIH0KICBdLAogICJjb25maWd1cmF0aW9uX3ZlcnNpb24iOiAiMSIKfQ=="}
+[info] {
+  "project_info": {
+    "project_number": "229350524307",
+    "project_id": "employee-attendance-db-1089a",
+    "storage_bucket": "employee-attendance-db-1089a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229350524307:android:d4ccf7384b916c517a9466",
+        "android_client_info": {
+          "package_name": "com.example.employee_attendance_system"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-RUewA2N8TgkiXeUuHqqAWmLN5nEmFwU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+[debug] [2026-09-21T05:16:43.834Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:299:49)
+    at listOnTimeout (node:internal/timers:685:17)
+    at process.processTimers (node:internal/timers:618:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-09-21T05:16:45.919Z] ----------------------------------------------------------------------
+[debug] [2026-09-21T05:16:45.924Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js apps:list ios --json --project=employee-attendance-db-1089a
+[debug] [2026-09-21T05:16:45.925Z] CLI Version:   15.30.2
+[debug] [2026-09-21T05:16:45.925Z] Platform:      win32
+[debug] [2026-09-21T05:16:45.925Z] Node Version:  v24.21.0
+[debug] [2026-09-21T05:16:45.926Z] Detected Agent: unknown
+[debug] [2026-09-21T05:16:45.926Z] Time:          Mon Sep 21 2026 13:16:45 GMT+0800 (Philippine Standard Time)
+[debug] [2026-09-21T05:16:45.926Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-09-21T05:16:45.941Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-09-21T05:16:45.942Z] > authorizing via signed-in user (e.toyongan.554232@umindanao.edu.ph)
+[debug] [2026-09-21T05:16:45.970Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:16:45.970Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:16:45.972Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/iosApps pageSize=100
+[debug] [2026-09-21T05:16:46.734Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/iosApps 200
+[debug] [2026-09-21T05:16:46.735Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/iosApps {}
+[info] No apps found.
+[debug] [2026-09-21T05:16:56.768Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:299:49)
+    at listOnTimeout (node:internal/timers:685:17)
+    at process.processTimers (node:internal/timers:618:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-09-21T05:16:58.889Z] ----------------------------------------------------------------------
+[debug] [2026-09-21T05:16:58.893Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js apps:create ios employee_attendance_system (ios) --bundle-id=com.example.employeeAttendanceSystem --json --project=employee-attendance-db-1089a
+[debug] [2026-09-21T05:16:58.894Z] CLI Version:   15.30.2
+[debug] [2026-09-21T05:16:58.894Z] Platform:      win32
+[debug] [2026-09-21T05:16:58.894Z] Node Version:  v24.21.0
+[debug] [2026-09-21T05:16:58.894Z] Detected Agent: unknown
+[debug] [2026-09-21T05:16:58.895Z] Time:          Mon Sep 21 2026 13:16:58 GMT+0800 (Philippine Standard Time)
+[debug] [2026-09-21T05:16:58.895Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-09-21T05:16:58.911Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-09-21T05:16:58.912Z] > authorizing via signed-in user (e.toyongan.554232@umindanao.edu.ph)
+[info] Create your IOS app in project employee-attendance-db-1089a:
+[debug] [2026-09-21T05:16:58.942Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:16:58.943Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:16:58.945Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/iosApps [none]
+[debug] [2026-09-21T05:16:58.946Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/iosApps {"displayName":"employee_attendance_system (ios)","bundleId":"com.example.employeeAttendanceSystem"}
+[debug] [2026-09-21T05:17:01.181Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/iosApps 200
+[debug] [2026-09-21T05:17:01.181Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/iosApps {"name":"operations/workflows/NGJjNzE5ODMtMjJmOS00NDY3LWJjMzYtMjZmNGU3YjAxNzA2"}
+[debug] [2026-09-21T05:17:01.183Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:17:01.183Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:17:01.183Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGJjNzE5ODMtMjJmOS00NDY3LWJjMzYtMjZmNGU3YjAxNzA2 [none]
+[debug] [2026-09-21T05:17:01.744Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGJjNzE5ODMtMjJmOS00NDY3LWJjMzYtMjZmNGU3YjAxNzA2 200
+[debug] [2026-09-21T05:17:01.744Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGJjNzE5ODMtMjJmOS00NDY3LWJjMzYtMjZmNGU3YjAxNzA2 {"name":"operations/workflows/NGJjNzE5ODMtMjJmOS00NDY3LWJjMzYtMjZmNGU3YjAxNzA2"}
+[debug] [2026-09-21T05:17:02.247Z] [Create iOS app Poller] Retrying task index 0
+[debug] [2026-09-21T05:17:02.247Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:17:02.247Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:17:02.248Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGJjNzE5ODMtMjJmOS00NDY3LWJjMzYtMjZmNGU3YjAxNzA2 [none]
+[debug] [2026-09-21T05:17:02.702Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGJjNzE5ODMtMjJmOS00NDY3LWJjMzYtMjZmNGU3YjAxNzA2 200
+[debug] [2026-09-21T05:17:02.703Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGJjNzE5ODMtMjJmOS00NDY3LWJjMzYtMjZmNGU3YjAxNzA2 {"name":"operations/workflows/NGJjNzE5ODMtMjJmOS00NDY3LWJjMzYtMjZmNGU3YjAxNzA2"}
+[debug] [2026-09-21T05:17:03.707Z] [Create iOS app Poller] Retrying task index 0
+[debug] [2026-09-21T05:17:03.708Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:17:03.708Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:17:03.709Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGJjNzE5ODMtMjJmOS00NDY3LWJjMzYtMjZmNGU3YjAxNzA2 [none]
+[debug] [2026-09-21T05:17:04.504Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGJjNzE5ODMtMjJmOS00NDY3LWJjMzYtMjZmNGU3YjAxNzA2 200
+[debug] [2026-09-21T05:17:04.504Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGJjNzE5ODMtMjJmOS00NDY3LWJjMzYtMjZmNGU3YjAxNzA2 {"name":"operations/workflows/NGJjNzE5ODMtMjJmOS00NDY3LWJjMzYtMjZmNGU3YjAxNzA2"}
+[debug] [2026-09-21T05:17:06.512Z] [Create iOS app Poller] Retrying task index 0
+[debug] [2026-09-21T05:17:06.513Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:17:06.513Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:17:06.513Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGJjNzE5ODMtMjJmOS00NDY3LWJjMzYtMjZmNGU3YjAxNzA2 [none]
+[debug] [2026-09-21T05:17:08.407Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGJjNzE5ODMtMjJmOS00NDY3LWJjMzYtMjZmNGU3YjAxNzA2 200
+[debug] [2026-09-21T05:17:08.407Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGJjNzE5ODMtMjJmOS00NDY3LWJjMzYtMjZmNGU3YjAxNzA2 {"name":"operations/workflows/NGJjNzE5ODMtMjJmOS00NDY3LWJjMzYtMjZmNGU3YjAxNzA2"}
+[debug] [2026-09-21T05:17:12.409Z] [Create iOS app Poller] Retrying task index 0
+[debug] [2026-09-21T05:17:12.409Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:17:12.410Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:17:12.410Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGJjNzE5ODMtMjJmOS00NDY3LWJjMzYtMjZmNGU3YjAxNzA2 [none]
+[debug] [2026-09-21T05:17:13.546Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGJjNzE5ODMtMjJmOS00NDY3LWJjMzYtMjZmNGU3YjAxNzA2 200
+[debug] [2026-09-21T05:17:13.546Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NGJjNzE5ODMtMjJmOS00NDY3LWJjMzYtMjZmNGU3YjAxNzA2 {"name":"operations/workflows/NGJjNzE5ODMtMjJmOS00NDY3LWJjMzYtMjZmNGU3YjAxNzA2","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.IosApp","name":"projects/employee-attendance-db-1089a/iosApps/1:229350524307:ios:0757b7af8c7a8fb17a9466","appId":"1:229350524307:ios:0757b7af8c7a8fb17a9466","displayName":"employee_attendance_system (ios)","projectId":"employee-attendance-db-1089a","bundleId":"com.example.employeeAttendanceSystem","apiKeyId":"83042b13-0633-4eba-ba64-52d614ac619b","state":"ACTIVE","expireTime":"1970-01-01T00:00:00Z","framework":{},"etag":"1_1ad33998-b6ca-41e9-b9d2-fda33fee9b15"}}
+[info] 
+[info] 🎉🎉🎉 Your Firebase IOS App is ready! 🎉🎉🎉
+[info] 
+[info] App information:
+[info]   - App ID: 1:229350524307:ios:0757b7af8c7a8fb17a9466
+[info]   - Display name: employee_attendance_system (ios)
+[info]   - Bundle ID: com.example.employeeAttendanceSystem
+[info] 
+[info] You can run this command to print out your new app's Google Services config:
+[info]   firebase apps:sdkconfig IOS 1:229350524307:ios:0757b7af8c7a8fb17a9466
+[debug] [2026-09-21T05:17:23.579Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:299:49)
+    at listOnTimeout (node:internal/timers:685:17)
+    at process.processTimers (node:internal/timers:618:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-09-21T05:17:25.741Z] ----------------------------------------------------------------------
+[debug] [2026-09-21T05:17:25.746Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js apps:sdkconfig ios 1:229350524307:ios:0757b7af8c7a8fb17a9466 --json
+[debug] [2026-09-21T05:17:25.747Z] CLI Version:   15.30.2
+[debug] [2026-09-21T05:17:25.747Z] Platform:      win32
+[debug] [2026-09-21T05:17:25.747Z] Node Version:  v24.21.0
+[debug] [2026-09-21T05:17:25.747Z] Detected Agent: unknown
+[debug] [2026-09-21T05:17:25.747Z] Time:          Mon Sep 21 2026 13:17:25 GMT+0800 (Philippine Standard Time)
+[debug] [2026-09-21T05:17:25.748Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-09-21T05:17:25.763Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-09-21T05:17:25.763Z] > authorizing via signed-in user (e.toyongan.554232@umindanao.edu.ph)
+[debug] [2026-09-21T05:17:25.794Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:17:25.794Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:17:25.797Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/iosApps/1:229350524307:ios:0757b7af8c7a8fb17a9466/config [none]
+[debug] [2026-09-21T05:17:27.453Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/iosApps/1:229350524307:ios:0757b7af8c7a8fb17a9466/config 200
+[debug] [2026-09-21T05:17:27.453Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/iosApps/1:229350524307:ios:0757b7af8c7a8fb17a9466/config {"configFilename":"GoogleService-Info.plist","configFileContents":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHBsaXN0IFBVQkxJQyAiLS8vQXBwbGUvL0RURCBQTElTVCAxLjAvL0VOIiAiaHR0cDovL3d3dy5hcHBsZS5jb20vRFREcy9Qcm9wZXJ0eUxpc3QtMS4wLmR0ZCI+CjxwbGlzdCB2ZXJzaW9uPSIxLjAiPgo8ZGljdD4KCTxrZXk+QVBJX0tFWTwva2V5PgoJPHN0cmluZz5BSXphU3lCRklQTjliQ05fcVFoLXhZeGVRQW1zOU0xcktJMlhPY3M8L3N0cmluZz4KCTxrZXk+R0NNX1NFTkRFUl9JRDwva2V5PgoJPHN0cmluZz4yMjkzNTA1MjQzMDc8L3N0cmluZz4KCTxrZXk+UExJU1RfVkVSU0lPTjwva2V5PgoJPHN0cmluZz4xPC9zdHJpbmc+Cgk8a2V5PkJVTkRMRV9JRDwva2V5PgoJPHN0cmluZz5jb20uZXhhbXBsZS5lbXBsb3llZUF0dGVuZGFuY2VTeXN0ZW08L3N0cmluZz4KCTxrZXk+UFJPSkVDVF9JRDwva2V5PgoJPHN0cmluZz5lbXBsb3llZS1hdHRlbmRhbmNlLWRiLTEwODlhPC9zdHJpbmc+Cgk8a2V5PlNUT1JBR0VfQlVDS0VUPC9rZXk+Cgk8c3RyaW5nPmVtcGxveWVlLWF0dGVuZGFuY2UtZGItMTA4OWEuZmlyZWJhc2VzdG9yYWdlLmFwcDwvc3RyaW5nPgoJPGtleT5JU19BRFNfRU5BQkxFRDwva2V5PgoJPGZhbHNlPjwvZmFsc2U+Cgk8a2V5PklTX0FOQUxZVElDU19FTkFCTEVEPC9rZXk+Cgk8ZmFsc2U+PC9mYWxzZT4KCTxrZXk+SVNfQVBQSU5WSVRFX0VOQUJMRUQ8L2tleT4KCTx0cnVlPjwvdHJ1ZT4KCTxrZXk+SVNfR0NNX0VOQUJMRUQ8L2tleT4KCTx0cnVlPjwvdHJ1ZT4KCTxrZXk+SVNfU0lHTklOX0VOQUJMRUQ8L2tleT4KCTx0cnVlPjwvdHJ1ZT4KCTxrZXk+R09PR0xFX0FQUF9JRDwva2V5PgoJPHN0cmluZz4xOjIyOTM1MDUyNDMwNzppb3M6MDc1N2I3YWY4YzdhOGZiMTdhOTQ2Njwvc3RyaW5nPgo8L2RpY3Q+CjwvcGxpc3Q+"}
+[info] <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBFIPN9bCN_qQh-xYxeQAms9M1rKI2XOcs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>229350524307</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.employeeAttendanceSystem</string>
+	<key>PROJECT_ID</key>
+	<string>employee-attendance-db-1089a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>employee-attendance-db-1089a.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:229350524307:ios:0757b7af8c7a8fb17a9466</string>
+</dict>
+</plist>
+[debug] [2026-09-21T05:17:37.489Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:299:49)
+    at listOnTimeout (node:internal/timers:685:17)
+    at process.processTimers (node:internal/timers:618:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-09-21T05:17:40.449Z] ----------------------------------------------------------------------
+[debug] [2026-09-21T05:17:40.454Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js apps:list ios --json --project=employee-attendance-db-1089a
+[debug] [2026-09-21T05:17:40.454Z] CLI Version:   15.30.2
+[debug] [2026-09-21T05:17:40.455Z] Platform:      win32
+[debug] [2026-09-21T05:17:40.455Z] Node Version:  v24.21.0
+[debug] [2026-09-21T05:17:40.455Z] Detected Agent: unknown
+[debug] [2026-09-21T05:17:40.455Z] Time:          Mon Sep 21 2026 13:17:40 GMT+0800 (Philippine Standard Time)
+[debug] [2026-09-21T05:17:40.455Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-09-21T05:17:40.470Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-09-21T05:17:40.471Z] > authorizing via signed-in user (e.toyongan.554232@umindanao.edu.ph)
+[debug] [2026-09-21T05:17:40.498Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:17:40.498Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:17:40.500Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/iosApps pageSize=100
+[debug] [2026-09-21T05:17:41.298Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/iosApps 200
+[debug] [2026-09-21T05:17:41.299Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/iosApps {"apps":[{"name":"projects/employee-attendance-db-1089a/iosApps/1:229350524307:ios:0757b7af8c7a8fb17a9466","appId":"1:229350524307:ios:0757b7af8c7a8fb17a9466","displayName":"employee_attendance_system (ios)","projectId":"employee-attendance-db-1089a","bundleId":"com.example.employeeAttendanceSystem","apiKeyId":"83042b13-0633-4eba-ba64-52d614ac619b","state":"ACTIVE","expireTime":"1970-01-01T00:00:00Z","framework":{},"etag":"1_1ad33998-b6ca-41e9-b9d2-fda33fee9b15"}]}
+[info] ┌──────────────────────────────────┬───────────────────────────────────────────┬──────────┐
+│ App Display Name                 │ App ID                                    │ Platform │
+├──────────────────────────────────┼───────────────────────────────────────────┼──────────┤
+│ employee_attendance_system (ios) │ 1:229350524307:ios:0757b7af8c7a8fb17a9466 │ IOS      │
+└──────────────────────────────────┴───────────────────────────────────────────┴──────────┘
+[info] 
+[info] 1 app(s) total.
+[debug] [2026-09-21T05:17:51.355Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:299:49)
+    at listOnTimeout (node:internal/timers:685:17)
+    at process.processTimers (node:internal/timers:618:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-09-21T05:17:53.378Z] ----------------------------------------------------------------------
+[debug] [2026-09-21T05:17:53.383Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js apps:sdkconfig ios 1:229350524307:ios:0757b7af8c7a8fb17a9466 --json
+[debug] [2026-09-21T05:17:53.384Z] CLI Version:   15.30.2
+[debug] [2026-09-21T05:17:53.384Z] Platform:      win32
+[debug] [2026-09-21T05:17:53.384Z] Node Version:  v24.21.0
+[debug] [2026-09-21T05:17:53.384Z] Detected Agent: unknown
+[debug] [2026-09-21T05:17:53.384Z] Time:          Mon Sep 21 2026 13:17:53 GMT+0800 (Philippine Standard Time)
+[debug] [2026-09-21T05:17:53.385Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-09-21T05:17:53.401Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-09-21T05:17:53.402Z] > authorizing via signed-in user (e.toyongan.554232@umindanao.edu.ph)
+[debug] [2026-09-21T05:17:53.431Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:17:53.431Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:17:53.433Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/iosApps/1:229350524307:ios:0757b7af8c7a8fb17a9466/config [none]
+[debug] [2026-09-21T05:17:54.858Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/iosApps/1:229350524307:ios:0757b7af8c7a8fb17a9466/config 200
+[debug] [2026-09-21T05:17:54.858Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/iosApps/1:229350524307:ios:0757b7af8c7a8fb17a9466/config {"configFilename":"GoogleService-Info.plist","configFileContents":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHBsaXN0IFBVQkxJQyAiLS8vQXBwbGUvL0RURCBQTElTVCAxLjAvL0VOIiAiaHR0cDovL3d3dy5hcHBsZS5jb20vRFREcy9Qcm9wZXJ0eUxpc3QtMS4wLmR0ZCI+CjxwbGlzdCB2ZXJzaW9uPSIxLjAiPgo8ZGljdD4KCTxrZXk+QVBJX0tFWTwva2V5PgoJPHN0cmluZz5BSXphU3lCRklQTjliQ05fcVFoLXhZeGVRQW1zOU0xcktJMlhPY3M8L3N0cmluZz4KCTxrZXk+R0NNX1NFTkRFUl9JRDwva2V5PgoJPHN0cmluZz4yMjkzNTA1MjQzMDc8L3N0cmluZz4KCTxrZXk+UExJU1RfVkVSU0lPTjwva2V5PgoJPHN0cmluZz4xPC9zdHJpbmc+Cgk8a2V5PkJVTkRMRV9JRDwva2V5PgoJPHN0cmluZz5jb20uZXhhbXBsZS5lbXBsb3llZUF0dGVuZGFuY2VTeXN0ZW08L3N0cmluZz4KCTxrZXk+UFJPSkVDVF9JRDwva2V5PgoJPHN0cmluZz5lbXBsb3llZS1hdHRlbmRhbmNlLWRiLTEwODlhPC9zdHJpbmc+Cgk8a2V5PlNUT1JBR0VfQlVDS0VUPC9rZXk+Cgk8c3RyaW5nPmVtcGxveWVlLWF0dGVuZGFuY2UtZGItMTA4OWEuZmlyZWJhc2VzdG9yYWdlLmFwcDwvc3RyaW5nPgoJPGtleT5JU19BRFNfRU5BQkxFRDwva2V5PgoJPGZhbHNlPjwvZmFsc2U+Cgk8a2V5PklTX0FOQUxZVElDU19FTkFCTEVEPC9rZXk+Cgk8ZmFsc2U+PC9mYWxzZT4KCTxrZXk+SVNfQVBQSU5WSVRFX0VOQUJMRUQ8L2tleT4KCTx0cnVlPjwvdHJ1ZT4KCTxrZXk+SVNfR0NNX0VOQUJMRUQ8L2tleT4KCTx0cnVlPjwvdHJ1ZT4KCTxrZXk+SVNfU0lHTklOX0VOQUJMRUQ8L2tleT4KCTx0cnVlPjwvdHJ1ZT4KCTxrZXk+R09PR0xFX0FQUF9JRDwva2V5PgoJPHN0cmluZz4xOjIyOTM1MDUyNDMwNzppb3M6MDc1N2I3YWY4YzdhOGZiMTdhOTQ2Njwvc3RyaW5nPgo8L2RpY3Q+CjwvcGxpc3Q+"}
+[info] <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBFIPN9bCN_qQh-xYxeQAms9M1rKI2XOcs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>229350524307</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.employeeAttendanceSystem</string>
+	<key>PROJECT_ID</key>
+	<string>employee-attendance-db-1089a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>employee-attendance-db-1089a.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:229350524307:ios:0757b7af8c7a8fb17a9466</string>
+</dict>
+</plist>
+[debug] [2026-09-21T05:18:04.883Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:299:49)
+    at listOnTimeout (node:internal/timers:685:17)
+    at process.processTimers (node:internal/timers:618:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-09-21T05:18:06.998Z] ----------------------------------------------------------------------
+[debug] [2026-09-21T05:18:07.003Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js apps:list web --json --project=employee-attendance-db-1089a
+[debug] [2026-09-21T05:18:07.003Z] CLI Version:   15.30.2
+[debug] [2026-09-21T05:18:07.003Z] Platform:      win32
+[debug] [2026-09-21T05:18:07.004Z] Node Version:  v24.21.0
+[debug] [2026-09-21T05:18:07.004Z] Detected Agent: unknown
+[debug] [2026-09-21T05:18:07.004Z] Time:          Mon Sep 21 2026 13:18:07 GMT+0800 (Philippine Standard Time)
+[debug] [2026-09-21T05:18:07.004Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-09-21T05:18:07.019Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-09-21T05:18:07.020Z] > authorizing via signed-in user (e.toyongan.554232@umindanao.edu.ph)
+[debug] [2026-09-21T05:18:07.047Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:18:07.047Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:18:07.050Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/webApps pageSize=100
+[debug] [2026-09-21T05:18:08.056Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/webApps 200
+[debug] [2026-09-21T05:18:08.056Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/webApps {}
+[info] No apps found.
+[debug] [2026-09-21T05:18:18.093Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:299:49)
+    at listOnTimeout (node:internal/timers:685:17)
+    at process.processTimers (node:internal/timers:618:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-09-21T05:18:20.125Z] ----------------------------------------------------------------------
+[debug] [2026-09-21T05:18:20.131Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js apps:create web employee_attendance_system (web) --json --project=employee-attendance-db-1089a
+[debug] [2026-09-21T05:18:20.132Z] CLI Version:   15.30.2
+[debug] [2026-09-21T05:18:20.132Z] Platform:      win32
+[debug] [2026-09-21T05:18:20.132Z] Node Version:  v24.21.0
+[debug] [2026-09-21T05:18:20.132Z] Detected Agent: unknown
+[debug] [2026-09-21T05:18:20.133Z] Time:          Mon Sep 21 2026 13:18:20 GMT+0800 (Philippine Standard Time)
+[debug] [2026-09-21T05:18:20.133Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-09-21T05:18:20.149Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-09-21T05:18:20.150Z] > authorizing via signed-in user (e.toyongan.554232@umindanao.edu.ph)
+[info] Create your WEB app in project employee-attendance-db-1089a:
+[debug] [2026-09-21T05:18:20.177Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:18:20.178Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:18:20.180Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/webApps [none]
+[debug] [2026-09-21T05:18:20.180Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/webApps {"displayName":"employee_attendance_system (web)"}
+[debug] [2026-09-21T05:18:22.745Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/webApps 200
+[debug] [2026-09-21T05:18:22.746Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/webApps {"name":"operations/workflows/ZTliNDFjZTEtMTA3Zi00ZjFlLWI0NGUtMzA3YzlmM2ZhMDQw"}
+[debug] [2026-09-21T05:18:22.747Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:18:22.748Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:18:22.748Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZTliNDFjZTEtMTA3Zi00ZjFlLWI0NGUtMzA3YzlmM2ZhMDQw [none]
+[debug] [2026-09-21T05:18:23.401Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZTliNDFjZTEtMTA3Zi00ZjFlLWI0NGUtMzA3YzlmM2ZhMDQw 200
+[debug] [2026-09-21T05:18:23.401Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZTliNDFjZTEtMTA3Zi00ZjFlLWI0NGUtMzA3YzlmM2ZhMDQw {"name":"operations/workflows/ZTliNDFjZTEtMTA3Zi00ZjFlLWI0NGUtMzA3YzlmM2ZhMDQw"}
+[debug] [2026-09-21T05:18:23.901Z] [Create Web app Poller] Retrying task index 0
+[debug] [2026-09-21T05:18:23.901Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:18:23.901Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:18:23.902Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZTliNDFjZTEtMTA3Zi00ZjFlLWI0NGUtMzA3YzlmM2ZhMDQw [none]
+[debug] [2026-09-21T05:18:24.398Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZTliNDFjZTEtMTA3Zi00ZjFlLWI0NGUtMzA3YzlmM2ZhMDQw 200
+[debug] [2026-09-21T05:18:24.399Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZTliNDFjZTEtMTA3Zi00ZjFlLWI0NGUtMzA3YzlmM2ZhMDQw {"name":"operations/workflows/ZTliNDFjZTEtMTA3Zi00ZjFlLWI0NGUtMzA3YzlmM2ZhMDQw"}
+[debug] [2026-09-21T05:18:25.403Z] [Create Web app Poller] Retrying task index 0
+[debug] [2026-09-21T05:18:25.404Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:18:25.404Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:18:25.405Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZTliNDFjZTEtMTA3Zi00ZjFlLWI0NGUtMzA3YzlmM2ZhMDQw [none]
+[debug] [2026-09-21T05:18:25.956Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZTliNDFjZTEtMTA3Zi00ZjFlLWI0NGUtMzA3YzlmM2ZhMDQw 200
+[debug] [2026-09-21T05:18:25.956Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZTliNDFjZTEtMTA3Zi00ZjFlLWI0NGUtMzA3YzlmM2ZhMDQw {"name":"operations/workflows/ZTliNDFjZTEtMTA3Zi00ZjFlLWI0NGUtMzA3YzlmM2ZhMDQw"}
+[debug] [2026-09-21T05:18:27.963Z] [Create Web app Poller] Retrying task index 0
+[debug] [2026-09-21T05:18:27.964Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:18:27.965Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:18:27.965Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZTliNDFjZTEtMTA3Zi00ZjFlLWI0NGUtMzA3YzlmM2ZhMDQw [none]
+[debug] [2026-09-21T05:18:28.424Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZTliNDFjZTEtMTA3Zi00ZjFlLWI0NGUtMzA3YzlmM2ZhMDQw 200
+[debug] [2026-09-21T05:18:28.425Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/ZTliNDFjZTEtMTA3Zi00ZjFlLWI0NGUtMzA3YzlmM2ZhMDQw {"name":"operations/workflows/ZTliNDFjZTEtMTA3Zi00ZjFlLWI0NGUtMzA3YzlmM2ZhMDQw","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.WebApp","name":"projects/employee-attendance-db-1089a/webApps/1:229350524307:web:ef014fa7044b9b4a7a9466","appId":"1:229350524307:web:ef014fa7044b9b4a7a9466","displayName":"employee_attendance_system (web)","projectId":"employee-attendance-db-1089a","webId":"YTAwNWNiNjktNWJkNy00NWViLTkyN2QtNmEyMzljM2NlZjI3","apiKeyId":"987d354b-114e-4712-a519-9d7b2add17c9","state":"ACTIVE","expireTime":"1970-01-01T00:00:00Z","etag":"1_df009334-ddfa-4a37-8e84-f5b3a5c226c7"}}
+[info] 
+[info] 🎉🎉🎉 Your Firebase WEB App is ready! 🎉🎉🎉
+[info] 
+[info] App information:
+[info]   - App ID: 1:229350524307:web:ef014fa7044b9b4a7a9466
+[info]   - Display name: employee_attendance_system (web)
+[info] 
+[info] You can run this command to print out your new app's Google Services config:
+[info]   firebase apps:sdkconfig WEB 1:229350524307:web:ef014fa7044b9b4a7a9466
+[debug] [2026-09-21T05:18:38.452Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:299:49)
+    at listOnTimeout (node:internal/timers:685:17)
+    at process.processTimers (node:internal/timers:618:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-09-21T05:18:40.539Z] ----------------------------------------------------------------------
+[debug] [2026-09-21T05:18:40.543Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js apps:sdkconfig web 1:229350524307:web:ef014fa7044b9b4a7a9466 --json
+[debug] [2026-09-21T05:18:40.544Z] CLI Version:   15.30.2
+[debug] [2026-09-21T05:18:40.544Z] Platform:      win32
+[debug] [2026-09-21T05:18:40.544Z] Node Version:  v24.21.0
+[debug] [2026-09-21T05:18:40.545Z] Detected Agent: unknown
+[debug] [2026-09-21T05:18:40.545Z] Time:          Mon Sep 21 2026 13:18:40 GMT+0800 (Philippine Standard Time)
+[debug] [2026-09-21T05:18:40.545Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-09-21T05:18:40.560Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-09-21T05:18:40.561Z] > authorizing via signed-in user (e.toyongan.554232@umindanao.edu.ph)
+[debug] [2026-09-21T05:18:40.588Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:18:40.588Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:18:40.591Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:229350524307:web:ef014fa7044b9b4a7a9466/config [none]
+[debug] [2026-09-21T05:18:41.727Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:229350524307:web:ef014fa7044b9b4a7a9466/config 200
+[debug] [2026-09-21T05:18:41.728Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:229350524307:web:ef014fa7044b9b4a7a9466/config {"projectId":"employee-attendance-db-1089a","appId":"1:229350524307:web:ef014fa7044b9b4a7a9466","storageBucket":"employee-attendance-db-1089a.firebasestorage.app","apiKey":"AIzaSyA7LMY222yHuTXnlt0c-1llI0WkPu-c11s","authDomain":"employee-attendance-db-1089a.firebaseapp.com","messagingSenderId":"229350524307","measurementId":"G-W8DNW4B9X0","projectNumber":"229350524307","version":"2"}
+[info] {
+  "projectId": "employee-attendance-db-1089a",
+  "appId": "1:229350524307:web:ef014fa7044b9b4a7a9466",
+  "storageBucket": "employee-attendance-db-1089a.firebasestorage.app",
+  "apiKey": "AIzaSyA7LMY222yHuTXnlt0c-1llI0WkPu-c11s",
+  "authDomain": "employee-attendance-db-1089a.firebaseapp.com",
+  "messagingSenderId": "229350524307",
+  "measurementId": "G-W8DNW4B9X0",
+  "projectNumber": "229350524307",
+  "version": "2"
+}
+[debug] [2026-09-21T05:18:51.754Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:299:49)
+    at listOnTimeout (node:internal/timers:685:17)
+    at process.processTimers (node:internal/timers:618:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-09-21T05:18:54.565Z] ----------------------------------------------------------------------
+[debug] [2026-09-21T05:18:54.569Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js apps:list web --json --project=employee-attendance-db-1089a
+[debug] [2026-09-21T05:18:54.570Z] CLI Version:   15.30.2
+[debug] [2026-09-21T05:18:54.570Z] Platform:      win32
+[debug] [2026-09-21T05:18:54.570Z] Node Version:  v24.21.0
+[debug] [2026-09-21T05:18:54.571Z] Detected Agent: unknown
+[debug] [2026-09-21T05:18:54.571Z] Time:          Mon Sep 21 2026 13:18:54 GMT+0800 (Philippine Standard Time)
+[debug] [2026-09-21T05:18:54.571Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-09-21T05:18:54.586Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-09-21T05:18:54.587Z] > authorizing via signed-in user (e.toyongan.554232@umindanao.edu.ph)
+[debug] [2026-09-21T05:18:54.615Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:18:54.615Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:18:54.617Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/webApps pageSize=100
+[debug] [2026-09-21T05:18:56.075Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/webApps 200
+[debug] [2026-09-21T05:18:56.075Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/webApps {"apps":[{"name":"projects/employee-attendance-db-1089a/webApps/1:229350524307:web:ef014fa7044b9b4a7a9466","appId":"1:229350524307:web:ef014fa7044b9b4a7a9466","displayName":"employee_attendance_system (web)","projectId":"employee-attendance-db-1089a","webId":"YTAwNWNiNjktNWJkNy00NWViLTkyN2QtNmEyMzljM2NlZjI3","apiKeyId":"987d354b-114e-4712-a519-9d7b2add17c9","state":"ACTIVE","expireTime":"1970-01-01T00:00:00Z","etag":"1_df009334-ddfa-4a37-8e84-f5b3a5c226c7"}]}
+[info] ┌──────────────────────────────────┬───────────────────────────────────────────┬──────────┐
+│ App Display Name                 │ App ID                                    │ Platform │
+├──────────────────────────────────┼───────────────────────────────────────────┼──────────┤
+│ employee_attendance_system (web) │ 1:229350524307:web:ef014fa7044b9b4a7a9466 │ WEB      │
+└──────────────────────────────────┴───────────────────────────────────────────┴──────────┘
+[info] 
+[info] 1 app(s) total.
+[debug] [2026-09-21T05:19:06.124Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:299:49)
+    at listOnTimeout (node:internal/timers:685:17)
+    at process.processTimers (node:internal/timers:618:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-09-21T05:19:08.170Z] ----------------------------------------------------------------------
+[debug] [2026-09-21T05:19:08.174Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js apps:create web employee_attendance_system (windows) --json --project=employee-attendance-db-1089a
+[debug] [2026-09-21T05:19:08.175Z] CLI Version:   15.30.2
+[debug] [2026-09-21T05:19:08.175Z] Platform:      win32
+[debug] [2026-09-21T05:19:08.175Z] Node Version:  v24.21.0
+[debug] [2026-09-21T05:19:08.175Z] Detected Agent: unknown
+[debug] [2026-09-21T05:19:08.176Z] Time:          Mon Sep 21 2026 13:19:08 GMT+0800 (Philippine Standard Time)
+[debug] [2026-09-21T05:19:08.176Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-09-21T05:19:08.190Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-09-21T05:19:08.191Z] > authorizing via signed-in user (e.toyongan.554232@umindanao.edu.ph)
+[info] Create your WEB app in project employee-attendance-db-1089a:
+[debug] [2026-09-21T05:19:08.222Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:19:08.222Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:19:08.224Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/webApps [none]
+[debug] [2026-09-21T05:19:08.224Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/webApps {"displayName":"employee_attendance_system (windows)"}
+[debug] [2026-09-21T05:19:11.303Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/webApps 200
+[debug] [2026-09-21T05:19:11.303Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/employee-attendance-db-1089a/webApps {"name":"operations/workflows/NzhmYzEyNzctZWFlNy00MGNjLThjYTMtMzUwZWNiODhkMDI4"}
+[debug] [2026-09-21T05:19:11.306Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:19:11.306Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:19:11.306Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzhmYzEyNzctZWFlNy00MGNjLThjYTMtMzUwZWNiODhkMDI4 [none]
+[debug] [2026-09-21T05:19:13.436Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzhmYzEyNzctZWFlNy00MGNjLThjYTMtMzUwZWNiODhkMDI4 200
+[debug] [2026-09-21T05:19:13.436Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzhmYzEyNzctZWFlNy00MGNjLThjYTMtMzUwZWNiODhkMDI4 {"name":"operations/workflows/NzhmYzEyNzctZWFlNy00MGNjLThjYTMtMzUwZWNiODhkMDI4"}
+[debug] [2026-09-21T05:19:13.946Z] [Create Web app Poller] Retrying task index 0
+[debug] [2026-09-21T05:19:13.947Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:19:13.947Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:19:13.947Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzhmYzEyNzctZWFlNy00MGNjLThjYTMtMzUwZWNiODhkMDI4 [none]
+[debug] [2026-09-21T05:19:14.663Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzhmYzEyNzctZWFlNy00MGNjLThjYTMtMzUwZWNiODhkMDI4 200
+[debug] [2026-09-21T05:19:14.663Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/NzhmYzEyNzctZWFlNy00MGNjLThjYTMtMzUwZWNiODhkMDI4 {"name":"operations/workflows/NzhmYzEyNzctZWFlNy00MGNjLThjYTMtMzUwZWNiODhkMDI4","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.WebApp","name":"projects/employee-attendance-db-1089a/webApps/1:229350524307:web:0ea986f76e894a427a9466","appId":"1:229350524307:web:0ea986f76e894a427a9466","displayName":"employee_attendance_system (windows)","projectId":"employee-attendance-db-1089a","webId":"YTZjYjM1MjctNDg2NC00OTIxLThhNDktYmEyOTkyODc1ZTIz","apiKeyId":"987d354b-114e-4712-a519-9d7b2add17c9","state":"ACTIVE","expireTime":"1970-01-01T00:00:00Z","etag":"1_6ff1e9f4-675a-4024-b185-d6706644f169"}}
+[info] 
+[info] 🎉🎉🎉 Your Firebase WEB App is ready! 🎉🎉🎉
+[info] 
+[info] App information:
+[info]   - App ID: 1:229350524307:web:0ea986f76e894a427a9466
+[info]   - Display name: employee_attendance_system (windows)
+[info] 
+[info] You can run this command to print out your new app's Google Services config:
+[info]   firebase apps:sdkconfig WEB 1:229350524307:web:0ea986f76e894a427a9466
+[debug] [2026-09-21T05:19:24.684Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:299:49)
+    at listOnTimeout (node:internal/timers:685:17)
+    at process.processTimers (node:internal/timers:618:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-09-21T05:19:26.687Z] ----------------------------------------------------------------------
+[debug] [2026-09-21T05:19:26.692Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js apps:sdkconfig web 1:229350524307:web:0ea986f76e894a427a9466 --json
+[debug] [2026-09-21T05:19:26.692Z] CLI Version:   15.30.2
+[debug] [2026-09-21T05:19:26.692Z] Platform:      win32
+[debug] [2026-09-21T05:19:26.693Z] Node Version:  v24.21.0
+[debug] [2026-09-21T05:19:26.693Z] Detected Agent: unknown
+[debug] [2026-09-21T05:19:26.693Z] Time:          Mon Sep 21 2026 13:19:26 GMT+0800 (Philippine Standard Time)
+[debug] [2026-09-21T05:19:26.693Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-09-21T05:19:26.709Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-09-21T05:19:26.709Z] > authorizing via signed-in user (e.toyongan.554232@umindanao.edu.ph)
+[debug] [2026-09-21T05:19:26.736Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:19:26.737Z] Checked if tokens are valid: true, expires at: 1789971234806
+[debug] [2026-09-21T05:19:26.739Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:229350524307:web:0ea986f76e894a427a9466/config [none]
+[debug] [2026-09-21T05:19:28.094Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:229350524307:web:0ea986f76e894a427a9466/config 200
+[debug] [2026-09-21T05:19:28.094Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:229350524307:web:0ea986f76e894a427a9466/config {"projectId":"employee-attendance-db-1089a","appId":"1:229350524307:web:0ea986f76e894a427a9466","storageBucket":"employee-attendance-db-1089a.firebasestorage.app","apiKey":"AIzaSyA7LMY222yHuTXnlt0c-1llI0WkPu-c11s","authDomain":"employee-attendance-db-1089a.firebaseapp.com","messagingSenderId":"229350524307","measurementId":"G-2G7PB9HMKG","projectNumber":"229350524307","version":"2"}
+[info] {
+  "projectId": "employee-attendance-db-1089a",
+  "appId": "1:229350524307:web:0ea986f76e894a427a9466",
+  "storageBucket": "employee-attendance-db-1089a.firebasestorage.app",
+  "apiKey": "AIzaSyA7LMY222yHuTXnlt0c-1llI0WkPu-c11s",
+  "authDomain": "employee-attendance-db-1089a.firebaseapp.com",
+  "messagingSenderId": "229350524307",
+  "measurementId": "G-2G7PB9HMKG",
+  "projectNumber": "229350524307",
+  "version": "2"
+}
+[debug] [2026-09-21T05:19:38.130Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\earvin toyongan\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:299:49)
+    at listOnTimeout (node:internal/timers:685:17)
+    at process.processTimers (node:internal/timers:618:7)
+[error] 
+[error] Error: An unexpected error has occurred.
